@@ -78,7 +78,7 @@ This web application delivers an industrial, high-contrast monochrome design sys
 
 ```bash
 # Clone the repository
-git clone https://github.com/Sindoxx/tarek-ahmed-elevator-parts.git
+git clone https://github.com/SIndbad-7/tarek-ahmed-elevator-parts.git
 
 # Enter project directory
 cd tarek-ahmed-elevator-parts

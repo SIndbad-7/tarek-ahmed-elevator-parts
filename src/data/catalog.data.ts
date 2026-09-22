@@ -1,4 +1,4 @@
-import type { ElevatorPart } from '../types';
+import type { ElevatorPart } from '../core/types';
 
 export const ELEVATOR_PARTS: ElevatorPart[] = [
   {
@@ -17,7 +17,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 1850.00,
     unit: 'Unit',
-    leadTime: 'In Stock (Immediate Dispatch)',
+    leadTime: 'In Stock – Immediate Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20', 'EN81-50', 'CE Directive 2014/33/EU', 'ISO 9001'],
     badge: 'Heavy Duty Traction',
@@ -39,7 +39,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 520.00,
     unit: 'Complete Header Assembly',
-    leadTime: 'In Stock (Ready for Dispatch)',
+    leadTime: 'In Stock – Ready for Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20 Clause 5.3.6', 'CE', 'ISO 9001'],
     badge: 'VVVF Intelligent',
@@ -61,7 +61,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 290.00,
     unit: '100m Reel',
-    leadTime: 'In Stock (Warehouse Stocked)',
+    leadTime: 'In Stock – Warehouse Stocked',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['ISO 4344:2004', 'EN 12385-5', 'DIN 3062'],
     badge: 'High Fatigue Life',
@@ -83,7 +83,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 210.00,
     unit: 'Unit with Tensioner',
-    leadTime: 'In Stock (Immediate Dispatch)',
+    leadTime: 'In Stock – Immediate Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20', 'EN81-50:2014 Section 5.6.2', 'CE Safety Component'],
     badge: 'EN81-50 Certified',
@@ -105,7 +105,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 340.00,
     unit: 'Matched Pair (LH + RH)',
-    leadTime: 'In Stock (Ready for Dispatch)',
+    leadTime: 'In Stock – Ready for Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20', 'EN81-50 Clause 5.6.2.1', 'CE Certified Type Test'],
     badge: 'Critical Life-Safety',
@@ -119,7 +119,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     specs: 'Stroke length 80mm–175mm, rated speed ≤ 1.6 m/s, EN81 certified.',
     technicalBullets: [
       'Maximum Rated Speed: ≤ 1.6 m/s',
-      'Total Buffer Stroke Length: 175 mm (heavy duty deceleration curve)',
+      'Total Buffer Stroke Length: 175 mm',
       'Total Mass Range: 600 kg – 3,200 kg',
       'Hydraulic Fluid: Shell Tellus S2 V46 pre-filled with oil level sight glass',
       'Corrosion-resistant hard chrome plated hydraulic piston rod',
@@ -127,7 +127,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 145.00,
     unit: 'Unit',
-    leadTime: 'In Stock (Immediate Dispatch)',
+    leadTime: 'In Stock – Immediate Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20:2014 Clause 5.8.2', 'EN81-50 Clause 5.5', 'CE'],
     badge: 'Pit & Buffer EN81',
@@ -143,15 +143,15 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
       'Faceplate Material: 2.0 mm Heavy Gauge Brushed AISI 304 Stainless Steel',
       'Display: 7-inch Crisp High-Contrast Color TFT floor/direction & message screen',
       'Buttons: Vandal-resistant tactile micro-pushbuttons with tactile Braille code & blue LED halos',
-      'Emergency Controls: Alarm bell button, yellow telephone communication aperture, firefighter switch',
+      'Emergency Controls: Alarm bell button, telephone aperture, firefighter switch',
       'Integrated Inspection & Attendant keyed toggle switches',
       'Universal CAN-bus & parallel terminal interface board pre-wired'
     ],
     referencePrice: 380.00,
     unit: 'Complete Assembly',
-    leadTime: 'In Stock (1-2 Days Custom Etch)',
+    leadTime: 'In Stock – 1–2 Days Custom Etch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
-    standards: ['EN81-70 (Accessibility for persons with disabilities)', 'EN81-71 (Vandal Resistance)', 'CE'],
+    standards: ['EN81-70 (Accessibility)', 'EN81-71 (Vandal Resistance)', 'CE'],
     badge: 'AISI 304 Stainless',
     schematicType: 'operating-panel'
   },
@@ -171,7 +171,7 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
     ],
     referencePrice: 1450.00,
     unit: 'Complete Controller Cabinet',
-    leadTime: 'In Stock (Configured to Spec)',
+    leadTime: 'In Stock – Configured to Spec',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20', 'EN12015 / EN12016 EMC Compliance', 'CE Directive'],
     badge: 'Flagship Controller',
@@ -187,13 +187,13 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
       'Guide Rail Compatibility: T-Profile Rails 9mm, 10mm, and 16mm',
       'Package Includes: Set of 4 heavy duty guide shoes (2 Upper + 2 Lower)',
       'Liner Inserts: Ultra-low-friction oil-lubricated high-density polyurethane',
-      'Housing: Die-cast ductile iron housing with slotted vibration-dampening adjustment slots',
+      'Housing: Die-cast ductile iron housing with vibration-dampening adjustment slots',
       'Spring suspension dampeners eliminate cabin vibration and shaft noise',
       'Automatic wick lubricator oiler can mounts included'
     ],
     referencePrice: 115.00,
     unit: 'Set of 4 Units',
-    leadTime: 'In Stock (Immediate Dispatch)',
+    leadTime: 'In Stock – Immediate Dispatch',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['ISO 7465 Guide Rails Compatible', 'DIN EN 81'],
     badge: 'Low Friction & Noise',
@@ -211,28 +211,14 @@ export const ELEVATOR_PARTS: ElevatorPart[] = [
       'Operating Range: 0 to 4,000 mm door opening clearance',
       'Response Time: < 45 milliseconds instant cutoff signal',
       'Ambient Light Immunity: Up to 100,000 Lux sunlight tolerance',
-      'Includes transmitter bar, receiver bar, power controller box, and flexible high-flex cables'
+      'Includes transmitter bar, receiver bar, power controller box, and cables'
     ],
     referencePrice: 95.00,
     unit: 'Transmitter + Receiver Set',
-    leadTime: 'In Stock (Warehouse Stocked)',
+    leadTime: 'In Stock – Warehouse Stocked',
     compatibility: ['Otis', 'Schindler', 'KONE', 'Mitsubishi', 'Thyssenkrupp', 'Generic'],
     standards: ['EN81-20 Clause 5.3.6.2.2.1', 'CE Mark', 'IP54 Sealed'],
     badge: '194 Optical Beams',
     schematicType: 'light-curtain'
   }
-];
-
-export const ELEVATOR_BRANDS = [
-  'Otis Elevator Company',
-  'Schindler Elevator Corporation',
-  'KONE Corporation',
-  'Mitsubishi Electric Elevators',
-  'TK Elevator (Thyssenkrupp)',
-  'Fuji / Fujitec',
-  'Hitachi Elevators',
-  'Toshiba Elevator',
-  'Generic / Custom Hydraulic System',
-  'Generic / Custom Traction System',
-  'Other / Unspecified Brand'
 ];
